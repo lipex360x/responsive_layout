@@ -1,0 +1,23 @@
+.hero {
+  .container {
+    justify-content: space-between;
+  }
+
+  .content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 2rem;
+  
+    h2 {
+      color: $grey;
+      font-size: 3.2rem;
+      line-height: 4.2rem;
+    }
+  
+    p {
+      color: $purple;
+      line-height: 2.6rem;
+    }
+  }
+}
