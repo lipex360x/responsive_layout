@@ -1,10 +1,4 @@
 @import "@fontsource/source-sans-pro/index.css";
 
-@import 'variables';
-@import 'base';
-@import 'reset';
-@import 'header';
-@import 'hero';
-@import 'cards';
-@import 'form';
-@import 'modal';
+@import 'base/index';
+@import 'components/index';
