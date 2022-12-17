@@ -1,0 +1,14 @@
+{
+  "name": "responsivo",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "build": "wp-scripts build",
+    "dev": "wp-scripts start"
+  },
+  "dependencies": {
+    "@fontsource/source-sans-pro": "^4.5.11",
+    "@wordpress/scripts": "^25.0.0"
+  }
+}
