@@ -5,7 +5,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="build/index.css">
-  <link rel="stylesheet" href="build/style-index.css">
+  <!-- <link rel="stylesheet" href="build/style-index.css"> -->
 
   <title>Responsivo</title>
 </head>
@@ -72,66 +72,12 @@
         </div>
 
         <div class="content">
-          <p class="description">
+          <p class="title description">
             Formulário Animado com JS puro e CSS Animation | Mayk Brito
           </p>
 
           <div class="details">
-            <p class="">57 Min</p>
-            <p class="price">Free</p>
-          </div>
-        </div>
-      </div>
-
-      <div class="card">
-        
-        <div class="image">
-          <img src="https://i.ytimg.com/vi/GykTLqODQuU/hqdefault.jpg" />
-        </div>
-
-        <div class="content">
-          <p class="description">
-            Formulário Animado com JS puro e CSS Animation | Mayk Brito
-          </p>
-
-          <div class="details">
-            <p class="">57 Min</p>
-            <p class="price">Free</p>
-          </div>
-        </div>
-      </div>
-
-      <div class="card">
-        
-        <div class="image">
-          <img src="https://i.ytimg.com/vi/GykTLqODQuU/hqdefault.jpg" />
-        </div>
-
-        <div class="content">
-          <p class="description">
-            Formulário Animado com JS puro e CSS Animation | Mayk Brito
-          </p>
-
-          <div class="details">
-            <p class="">57 Min</p>
-            <p class="price">Free</p>
-          </div>
-        </div>
-      </div>
-      
-      <div class="card">
-        
-        <div class="image">
-          <img src="https://i.ytimg.com/vi/GykTLqODQuU/hqdefault.jpg" />
-        </div>
-
-        <div class="content">
-          <p class="description">
-            Formulário Animado com JS puro e CSS Animation | Mayk Brito
-          </p>
-
-          <div class="details">
-            <p class="">57 Min</p>
+            <p class="duration">57 Min</p>
             <p class="price">Free</p>
           </div>
         </div>
@@ -139,6 +85,63 @@
 
     </div>
   </section>
+
+  <section class="form">
+    <div class="container">
+
+      <form action="" class="">
+        <h3>Quero Estudar na Rocket!</h3>
+
+        <div class="form-group">
+          <input class="input-control" placeholder="Nome" />
+          <input type="email" class="input-control" placeholder="Email" />
+        </div>
+
+        <div class="form-group">
+          <input class="input-control" placeholder="Empresa" />
+        </div>
+
+        <div class="form-group">
+          <input class="input-control" placeholder="Endereço" />
+        </div>
+
+        <div class="form-group">
+          <input class="input-control" placeholder="Cidade" style="flex: 3 1" />
+          <input class="input-control" placeholder="Estado" style="flex: 1" />
+          <input class="input-control" placeholder="CEP" style="flex: 1" />
+        </div>
+
+        <div class="form-group">
+          <button type="submit" class="button">Salvar</button>
+        </div>
+
+      </form>
+    </div>
+  </section>
+
+  <div class="modal-overlay">
+    <div class="modal">
+      <a class="close-modal">
+        <svg viewBox="0 0 20 20">
+          <path
+            fill="#000000"
+            d="M15.898,4.045c-0.271-0.272-0.713-0.272-0.986,0l-4.71,4.711L5.493,4.045c-0.272-0.272-0.714-0.272-0.986,0s-0.272,0.714,0,0.986l4.709,4.711l-4.71,4.711c-0.272,0.271-0.272,0.713,0,0.986c0.136,0.136,0.314,0.203,0.492,0.203c0.179,0,0.357-0.067,0.493-0.203l4.711-4.711l4.71,4.711c0.137,0.136,0.314,0.203,0.494,0.203c0.178,0,0.355-0.067,0.492-0.203c0.273-0.273,0.273-0.715,0-0.986l-4.711-4.711l4.711-4.711C16.172,4.759,16.172,4.317,15.898,4.045z"
+          ></path>
+        </svg>
+      </a>
+      <div class="modal-content">
+        <div class="video-background">
+          <div class="video-foreground">
+            <iframe
+              src="https://www.youtube.com/embed/GykTLqODQuU"
+              frameborder="0"
+              allowfullscreen
+            ></iframe>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
   
   <script src="build/index.js"></script>
 </body>
