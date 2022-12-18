@@ -2,7 +2,7 @@
   .container {
     justify-content: space-between;
 
-    @include atMedium {
+    @include onMobile {
       flex-direction: column;
       text-align: center;
       align-items: center;
@@ -18,11 +18,6 @@
     flex-direction: column;
     justify-content: center;
     gap: 2rem;
-
-    @include atMedium {
-      margin-top: 4rem;
-      align-items: center;
-    }
   
     h2 {
       color: $grey;
@@ -33,6 +28,16 @@
     p {
       color: $purple;
       line-height: 2.6rem;
+    }
+
+    @include onMobile {
+      margin-top: 4rem;
+      align-items: center;
+
+      p {
+        font-size: 1.8rem;
+        line-height: 2.6rem;
+      }
     }
   }
 }
