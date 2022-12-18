@@ -5,6 +5,13 @@ header {
     justify-content: space-between;
   }
 
+  @include atMedium {
+    padding: 1rem 0;
+    nav {
+      display: none;
+    }
+  }
+
   nav ul {
     display: flex;
     height: 100%;

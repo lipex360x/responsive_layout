@@ -19,12 +19,21 @@
   .form-group {
     display: flex;
     gap: 1rem;
+
+    @include atMedium {
+      display: block;
+    }
   }
 
   .input-control {
     flex: 1 1;
     padding: 1.2rem;
     margin-bottom: 1rem;
+
+    @include atMedium {
+      display: block;
+      width: 100%;
+    }
   }
   
 }

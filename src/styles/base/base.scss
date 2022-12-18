@@ -1,6 +1,23 @@
+@mixin atSmall {
+  @media (max-width: 530px) {
+    @content;
+  }
+}
+
+@mixin atMedium {
+  @media (max-width: 768px) {
+    @content;
+  }
+}
+
+@mixin atLarge {
+  @media (max-width: 960px) {
+    @content;
+  }
+}
+
 section {
   padding: 4rem 0;
-  font-size: 1.6rem;
 }
 
 .container {
@@ -25,3 +42,4 @@ section {
     opacity: 0.9;
   }
 }
+

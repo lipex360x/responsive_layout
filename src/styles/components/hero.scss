@@ -1,6 +1,16 @@
 .hero {
   .container {
     justify-content: space-between;
+
+    @include atMedium {
+      flex-direction: column;
+      text-align: center;
+      align-items: center;
+
+      img {
+        order: -1;
+      }
+    }
   }
 
   .content {
@@ -8,6 +18,11 @@
     flex-direction: column;
     justify-content: center;
     gap: 2rem;
+
+    @include atMedium {
+      margin-top: 4rem;
+      align-items: center;
+    }
   
     h2 {
       color: $grey;
