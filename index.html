@@ -4,8 +4,6 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <script src="https://unpkg.com/phosphor-icons"></script>
-
   <link rel="stylesheet" href="build/index.css">
 
   <title>Responsivo</title>
@@ -19,11 +17,13 @@
         alt="Rocketseat"
       />
       <div class="menu-section">
+        
         <div class="menu-toggle">
           <div class="one"></div>
           <div class="two"></div>
           <div class="three"></div>
         </div>
+
         <nav>
           <ul>
             <li>
@@ -37,6 +37,11 @@
             </li>
             <li>
               <a href="#">Blog</a>
+            </li>
+            <li>
+              <a href="javascript:void(0)" class="search-toggle">
+                <i class="fa fa-search" aria-hidden="true"></i>
+              </a>
             </li>
           </ul>
         </nav>
@@ -147,8 +152,21 @@
       </div>
     </div>
   </div>
+
+  <div class="search-overlay">
+    <div class="search-section">
+      <div class="container">
+        <i class="fa fa-search" aria-hidden="true"></i>
+        <input type="text" name="" placeholder="What are you looking for?" class="search-field" autocomplete="off">
+        <i class="fa fa-window-close search-close" aria-hidden="true"></i>
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="search-results">results</div>
+    </div>
+  </div>
   
   <script src="build/index.js"></script>
-  <script src="build/menu.js"></script>
 </body>
 </html>

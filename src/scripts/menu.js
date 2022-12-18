@@ -1,10 +1,17 @@
-let show = true;
+export default class Menu {
+  constructor() {
+    this.show = true
+    this.menuSection = document.querySelector('.menu-section')
+    this.menuToggle = this.menuSection.querySelector('.menu-toggle')
 
-const menuSection = document.querySelector('.menu-section')
-const menuToggle = menuSection.querySelector('.menu-toogle')
+    this.execute()
+  }
 
-menuSection.addEventListener('click', () => {
-  document.body.style.overflow = show ? 'hidden' : 'initial'
-  menuSection.classList.toggle('on', show)
-  show = !show
-})
+  execute() {
+    this.menuToggle.addEventListener('click', () => {
+      document.body.style.overflow = this.show ? 'hidden' : 'initial'
+      this.menuSection.classList.toggle('on', this.show)
+      this.show = !this.show
+    })
+  }
+}
